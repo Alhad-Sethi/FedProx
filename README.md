@@ -1,8 +1,8 @@
 ### FedProx: Implementation and Evaluation
 
-We present an implementation of the celebrated FedProx algorithm as introduced in [1] to tackle client heterogeneity in federated networks. The pseudocode is as follows:
+We present an implementation of the celebrated FedProx algorithm as introduced in [[1]](https://arxiv.org/abs/1812.06127) to tackle client heterogeneity in federated networks. The pseudocode is as follows:
 
-> **Algorithm** *FedProx [1]*
+#### **Algorithm:** *FedProx*
 
 **Input:** K, T, $\mu$, $\gamma$, $w^0$, N, $p_k$, $k = 1$, $\cdots$, N  
 **for** $t = 0, \cdots, T-1$ **do**  
@@ -17,7 +17,7 @@ $$w_k^{t+1} \approx \arg \min_w h_k(w; w^t) = F_k(w) + \frac{\mu}{2} \|| w - w^t
 $$w^{t+1} = \frac{1}{K} \sum_{k \in S_t} w_k^{t+1}$$  
 **end for**
 
-In essence, the addition of the $l2$-penalty term in the client losses over the standard FedAvg algorithm [2] drives the view and the actual parameter closer together, making for faster convergence and lower client drift.
+In essence, the addition of the $l2$-penalty term in the client losses over the standard FedAvg algorithm [[2]](https://arxiv.org/abs/1602.05629) drives the view and the actual parameter closer together, making for faster convergence and lower client drift.
 
 Further, we perform experiments on i.i.d. (sampling from MNIST) and non-i.i.d. data (sampling from MNIST, fixing labels for each class) and visualize the effect of the the regularization coefficient $\mu$.
 
@@ -28,8 +28,8 @@ Clone the repo and run the following command:
 
 ----
 **Contributors**
-- @abhishek21441
-- @AlhadSethi
+- [@abhishek21441](https://github.com/abhishek21441)
+- [@AlhadSethi](https://github.com/Alhad-Sethi/)
 ----
 #### References
 [1] Li, T., Sahu, A. K., Zaheer, M., Sanjabi, M., Talwalkar, A., & Smith, V. (2020). Federated optimization in heterogeneous networks. Proceedings of Machine learning and systems, 2, 429-450.
