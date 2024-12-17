@@ -27,6 +27,12 @@ Clone the repo and run the following command:
 > python3 fedprox.py
 
 ----
+**TODO:**
+- Model partial participation by choosing random subset of clients.
+- Model system heterogeneity / stragglers.
+
+
+----
 **Contributors**
 - [@abhishek21441](https://github.com/abhishek21441)
 - [@AlhadSethi](https://github.com/Alhad-Sethi/)
